@@ -239,6 +239,19 @@ I still remember that early Winds & Pressure Belts class going straight over my 
       "Ma’am, you’ve always been super supportive—helping us complete our pending work rather than prioritizing the syllabus pace. It really feels like you understand our daily school struggles firsthand!",
       "Your guidance helped me master Winds & Pressure Belts and score really well. Your patience and encouragement make every class memorable. You are truly INSPIRING, APPROACHABLE, and COMPASSIONATE. Happy Teacher's Day! ~Arnav Kumar"
     ]
+  },
+  {
+    id: "quote-devansh",
+    author: "Devansh Pathak",
+    roleOrNickname: "Classmate",
+    avatarColor: "bg-violet-100 text-violet-900 border-violet-300",
+    likes: 45,
+    tags: "Ideal Teacher Gratitude",
+    message: "Dear Bhavya Ma'am, Thank You For Being The Ideal Teacher 👩‍🏫 Each Of Us Wanted. A Very Happy Teachers Day 🎊 from devansh",
+    quoteLines: [
+      "Dear Bhavya Ma'am, Thank You For Being The Ideal Teacher 👩‍🏫 Each Of Us Wanted.",
+      "A Very Happy Teachers Day 🎊 ~Devansh Pathak"
+    ]
   }
 ];
 
