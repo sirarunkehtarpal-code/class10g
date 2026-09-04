@@ -68,7 +68,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 backdrop-blur-md bg-white/95 border-b border-amber-200/60 transition-all shadow-xs">
-      <audio ref={musicRef} src="/audio.mp3" loop preload="auto" />
+      <audio ref={musicRef} src="/audio.mp3" autoPlay loop preload="auto" />
       <div className="max-w-6xl mx-auto px-3 sm:px-6 h-16 flex items-center justify-between">
         {/* Brand / Title */}
         <a href="#hero" onClick={closeMobileMenu} className="flex items-center gap-2 sm:gap-2.5 group shrink-0">

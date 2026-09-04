@@ -252,6 +252,35 @@ I still remember that early Winds & Pressure Belts class going straight over my 
       "Dear Bhavya Ma'am, Thank You For Being The Ideal Teacher 👩‍🏫 Each Of Us Wanted.",
       "A Very Happy Teachers Day 🎊 ~Devansh Pathak"
     ]
+  },
+  {
+    id: "quote-swastic",
+    author: "Swastic",
+    roleOrNickname: "Classmate",
+    avatarColor: "bg-cyan-100 text-cyan-900 border-cyan-300",
+    likes: 51,
+    tags: "Proof of Gratitude",
+    message: `Given: Let T represent the teacher, and let S represent the student.
+
+S initially possesses zero knowledge of the subject.
+
+To Prove: T is the optimal academic catalyst for S.
+
+Proof:
+As the academic year progresses, the effort applied by T approaches infinity (T->∞).
+Therefore, the trajectory of S is permanently altered in a positive direction.
+Conclusion: Happy Teachers' Day.
+Q.E.D
+
+P.S. Math aside, you are the most approachable and hands down the most composed teacher ever.
+Some cakes for you... 🍰🍰🎂
+
+~Swastic`,
+    quoteLines: [
+      "Given: Let T represent the teacher, and let S represent the student. S initially possesses zero knowledge of the subject.",
+      "To prove: T is the optimal academic catalyst for S. As the academic year progresses, T's effort approaches infinity (T->∞), permanently altering S's trajectory in a positive direction. Q.E.D.",
+      "Math aside, you are the most approachable and hands down the most composed teacher ever. Some cakes for you... 🍰🍰🎂 ~Swastic"
+    ]
   }
 ];
 
