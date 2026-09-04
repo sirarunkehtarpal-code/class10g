@@ -267,7 +267,7 @@ export const initialThankYouData: ThankYouData = {
   classBatch: "The Entire Class of 2026",
   studentsList: [
     "Aarush Singh",
-    "Aarush Singh",
+    "Aarush Agarwal",
     "Abhivyakti Shukla",
     "Aditya Jaiswal",
     "Aditya Tomar",
@@ -291,11 +291,10 @@ export const initialThankYouData: ThankYouData = {
     "Kartikeya Kohli",
     "Kashvi Srivastava",
     "Lincoln Verma",
-    "Mimit Singh",
+    "Mihit Singh",
     "Mohammad Abdullah Azam",
     "Mohammad Talha",
     "Nimisha Singh",
-    "Parth Shivhare",
     "Prisha Pandey",
     "Raghav Agarwal",
     "Rishabh Mishra",
@@ -308,5 +307,6 @@ export const initialThankYouData: ThankYouData = {
     "Swastic",
     "Tarun Tej Kumar",
     "Vishvendrea Pratap Kalchuri"
-  ]
+  ],
+  madeBy: "Aditya Tomar"
 };
