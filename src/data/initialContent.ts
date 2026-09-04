@@ -223,6 +223,22 @@ Btw Ma’am, the Triple Chocomelt Waffle was as sweet as you 🧇❤️ and I’
       "Happy Teachers’ Day to the GOAT Geography teacher! Thank you for making Geography actually interesting and for being our unofficial friend.",
       "Stay iconic, Ma’am. The Triple Chocomelt Waffle was as sweet as you, and you should definitely try the Naked Nutella someday! ~Rishabh"
     ]
+  },
+  {
+    id: "quote-arnav-kumar",
+    author: "Arnav Kumar",
+    roleOrNickname: "Classmate",
+    avatarColor: "bg-teal-100 text-teal-900 border-teal-300",
+    likes: 42,
+    tags: "Supportive & Inspiring",
+    message: `Ma’am, you’ve always been super supportive—helping us complete our pending work rather than prioritizing the syllabus pace. It really feels like you understand our daily school struggles firsthand!
+
+I still remember that early Winds & Pressure Belts class going straight over my head like a bouncer! But thanks to your guidance, I mastered the concepts and scored really well. Your patience and encouragement make every class memorable. You are truly INSPIRING, APPROACHABLE, and COMPASSIONATE. Happy Teacher's Day!
+-Arnav Kumar`,
+    quoteLines: [
+      "Ma’am, you’ve always been super supportive—helping us complete our pending work rather than prioritizing the syllabus pace. It really feels like you understand our daily school struggles firsthand!",
+      "Your guidance helped me master Winds & Pressure Belts and score really well. Your patience and encouragement make every class memorable. You are truly INSPIRING, APPROACHABLE, and COMPASSIONATE. Happy Teacher's Day! ~Arnav Kumar"
+    ]
   }
 ];
 
