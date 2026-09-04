@@ -1,0 +1,6 @@
+{
+  "name": "Happy Teachers' Day - Bhavya Ma'am",
+  "description": "A warm celebration and tribute webpage for Bhavya Ma'am on Teachers' Day with cherished class memories, student quotes, and a heartfelt thank you note.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
