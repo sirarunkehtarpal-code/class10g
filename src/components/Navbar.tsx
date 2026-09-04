@@ -1,11 +1,22 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Sparkles, Music, VolumeX, Heart, Menu, X } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { playCelebrationChime } from '../utils/audio';
 
 export default function Navbar() {
-  const [isPlayingMusic, setIsPlayingMusic] = useState(false);
+  const [isPlayingMusic, setIsPlayingMusic] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const musicRef = useRef<HTMLAudioElement>(null);
+
+  useEffect(() => {
+    const music = musicRef.current;
+    if (!music) return;
+
+    music.volume = 0.45;
+    void music.play().catch(() => {
+      // Browsers may wait for the first user interaction before allowing audio.
+    });
+  }, []);
 
   const triggerCelebration = () => {
     playCelebrationChime();
@@ -40,8 +51,15 @@ export default function Navbar() {
   };
 
   const toggleSound = () => {
-    playCelebrationChime();
-    setIsPlayingMusic(prev => !prev);
+    const music = musicRef.current;
+    if (!music) return;
+
+    if (music.paused) {
+      void music.play().then(() => setIsPlayingMusic(true)).catch(() => setIsPlayingMusic(false));
+    } else {
+      music.pause();
+      setIsPlayingMusic(false);
+    }
   };
 
   const closeMobileMenu = () => {
@@ -50,6 +68,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 backdrop-blur-md bg-white/95 border-b border-amber-200/60 transition-all shadow-xs">
+      <audio ref={musicRef} src="/audio.mp3" loop preload="auto" />
       <div className="max-w-6xl mx-auto px-3 sm:px-6 h-16 flex items-center justify-between">
         {/* Brand / Title */}
         <a href="#hero" onClick={closeMobileMenu} className="flex items-center gap-2 sm:gap-2.5 group shrink-0">
@@ -78,9 +97,9 @@ export default function Navbar() {
         <div className="flex items-center gap-1.5 sm:gap-3">
           <button
             onClick={toggleSound}
-            title={isPlayingMusic ? "Chimes playing" : "Play warm celebration chime"}
+            title={isPlayingMusic ? "Stop Teacher's Day song" : "Play Teacher's Day song"}
             className="p-2 sm:p-2 rounded-full text-amber-800 bg-amber-100/60 hover:bg-amber-200/70 transition-colors border border-amber-300/50"
-            aria-label="Toggle chime melody"
+            aria-label="Toggle Teacher's Day song"
           >
             {isPlayingMusic ? <Music className="w-4 h-4 text-orange-600 animate-pulse" /> : <VolumeX className="w-4 h-4" />}
           </button>

@@ -130,7 +130,7 @@ Happy Teacher's day Bhavya ma'am (◍•ᴗ•◍)❤️
     author: "Aditya Tomar",
     roleOrNickname: "Classmate",
     avatarColor: "bg-orange-100 text-orange-900 border-orange-300",
-    likes: 34,
+    likes: 67,
     tags: "Gratitude & Care",
     message: "Dear Bhavya Ma’am, thank you for always guiding us with patience, kindness, and a heart full of care. You’ve made learning feel special, and we’ll always be grateful for the memories and lessons you’ve given us. Happy Teacher’s Day!",
     quoteLines: [
@@ -245,7 +245,7 @@ I still remember that early Winds & Pressure Belts class going straight over my 
     author: "Devansh Pathak",
     roleOrNickname: "Classmate",
     avatarColor: "bg-violet-100 text-violet-900 border-violet-300",
-    likes: 45,
+    likes: 67,
     tags: "Ideal Teacher Gratitude",
     message: "Dear Bhavya Ma'am, Thank You For Being The Ideal Teacher 👩‍🏫 Each Of Us Wanted. A Very Happy Teachers Day 🎊 from devansh",
     quoteLines: [
