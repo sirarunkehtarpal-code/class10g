@@ -14,6 +14,7 @@ export interface MemoryPhoto {
   caption: string;
   dateTag: string;
   imageUrl: string;
+  imageFit?: 'cover' | 'contain';
   rotation: number;
   likes: number;
 }

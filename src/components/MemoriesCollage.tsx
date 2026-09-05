@@ -116,6 +116,16 @@ export default function MemoriesCollage({
             >
               🗺️ Geography Lessons
             </button>
+            <button
+              onClick={() => setActiveFilter('celebration')}
+              className={`px-3.5 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap shrink-0 transition-all ${
+                activeFilter === 'celebration'
+                  ? 'bg-amber-600 text-white shadow-xs'
+                  : 'bg-amber-50 text-amber-900 hover:bg-amber-100 border border-amber-200'
+              }`}
+            >
+              📸 New Candid Moments
+            </button>
           </div>
         </div>
 
@@ -153,7 +163,7 @@ export default function MemoriesCollage({
                     <SmartImage
                       src={memory.imageUrl}
                       alt={memory.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className={`w-full h-full ${memory.imageFit === 'contain' ? 'object-contain' : 'object-cover'} group-hover:scale-105 transition-transform duration-500`}
                     />
 
                     {/* Desktop Hover Overlay */}

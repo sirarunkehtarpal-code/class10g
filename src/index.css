@@ -42,6 +42,7 @@
   animation: pulse-subtle 4s ease-in-out infinite;
 }
 
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

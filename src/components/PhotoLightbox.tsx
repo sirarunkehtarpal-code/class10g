@@ -59,11 +59,11 @@ export default function PhotoLightbox({
         </div>
 
         {/* Image Container with navigation arrows */}
-        <div className="relative bg-amber-50/50 flex-grow min-h-[220px] max-h-[48vh] sm:max-h-[58vh] flex items-center justify-center overflow-hidden p-2">
+        <div className="relative bg-amber-50/50 h-[48vh] sm:h-[58vh] min-h-[220px] flex items-center justify-center overflow-hidden p-2">
           <SmartImage
             src={current.imageUrl}
             alt={current.title}
-            className="max-h-full w-auto max-w-full object-contain mx-auto rounded-md shadow-xs"
+            className="max-h-[46vh] sm:max-h-[56vh] w-auto max-w-full object-contain mx-auto rounded-md shadow-xs"
           />
 
           {/* Nav arrows */}

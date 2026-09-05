@@ -1,11 +1,32 @@
 import { TeacherInfo, MemoryPhoto, ClassmateQuote, ThankYouData } from '../types';
 
-import bhavyaMamImg from '../../bhavya_mam.webp';
-import potluckImg from '../../potluck.jpg';
-import saraswatiImg from '../../saraswati_pooja.jpeg';
-import feteCampImg from '../../fete_camp.jpg';
-import classroomImg from '../../classroom.jpeg';
-import rishabhImg from '../../rishabh.jpg';
+const bhavyaMamImg = '/images/bhavya_mam.webp';
+const potluckImg = '/images/potluck.jpg';
+const saraswatiImg = '/images/saraswati_pooja.jpeg';
+const feteCampImg = '/images/fete_camp.jpg';
+const classroomImg = '/images/classroom.jpeg';
+const rishabhImg = '/images/rishabh.jpg';
+
+const newClassPhotos = [
+  ['WhatsApp Image 2026-09-05 at 12.40.46.jpeg', 'The Little Moments', 'The ordinary school days became special because we shared them together.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.47.jpeg', 'Aditya with Devansh', 'A candid glimpse of the people and memories that made our class feel like home.', 'contain'],
+  ['WhatsApp Image 2026-09-05 at 12.40.48.jpeg', 'Smiles Between Lessons', 'Some of our best memories happened in the quiet moments between one lesson and the next.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.49.jpeg', 'A Day Worth Remembering', 'One more lovely page from our class scrapbook, filled with familiar faces and happy memories.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.50.jpeg', 'Classroom Chronicles', 'Every photo carries a little piece of the laughter, friendship, and chaos we shared.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.51.jpeg', 'Friends, Frames & Fun', 'A small snapshot of the energy and togetherness that made our school days unforgettable.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.51 (1).jpeg', 'The Joy We Shared', 'There was always a reason to smile when we were all together.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.51 (2).jpeg', 'A Memory in Motion', 'The moments may pass quickly, but the feeling of being together stays with us.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.52 (1).jpeg', 'Bright Days Ahead', 'A cheerful memory from a chapter we will always look back on with a smile.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.53 (1).jpeg', 'A Page from Our Scrapbook', 'A warm little reminder of the friendships and fun woven through our school days.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.54.jpeg', 'The Memories Stay', 'Years from now, these familiar moments will still bring the same happy feeling.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.54 (1).jpeg', 'Made of Many Moments', 'Our class memories were built from small joys, shared laughter, and being there for one another.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.56.jpeg', 'Laughter We Remember', 'The smiles in this photo say everything about the joy we found in one another.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.56 (1).jpeg', 'One More Happy Memory', 'Keeping this moment close, just like all the memories that made this year special.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.57.jpeg', 'The People Who Made It Special', 'School was brighter because of the friends, teachers, and shared moments in this frame.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.57 (1).jpeg', 'A Familiar Kind of Happiness', 'A simple, beautiful reminder of how much our class has shared.'],
+  ['WhatsApp Image 2026-09-05 at 12.40.58.jpeg', 'A Snapshot of Us', 'This is what togetherness looked like in our favourite school days.', 'contain'],
+  ['WhatsApp Image 2026-09-05 at 12.40.59.jpeg', 'The Best Kind of Throwback', 'A final peek into the happy, colourful, wonderfully chaotic story of our class.'],
+] as const;
 
 export const initialTeacherInfo: TeacherInfo = {
   name: "Bhavya Ma'am",
@@ -75,6 +96,17 @@ export const initialMemories: MemoryPhoto[] = [
     rotation: 1.8,
     likes: 53
   },
+  ...newClassPhotos.map(([fileName, title, caption, imageFit], index): MemoryPhoto => ({
+    id: `mem-class-photo-${index + 1}`,
+    title,
+    category: 'celebration',
+    caption,
+    dateTag: 'Classroom & Candid Moments',
+    imageUrl: encodeURI(`/images/${fileName}`),
+    imageFit,
+    rotation: [-1.8, 1.5, -2.2, 2.1, -1.2][index % 5],
+    likes: 28 + (index % 8)
+  })),
 ];
 
 export const initialClassmateQuotes: ClassmateQuote[] = [

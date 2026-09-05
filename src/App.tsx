@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Navbar from './components/Navbar';
 import HeroTeacherSection from './components/HeroTeacherSection';
+import VideoSection from './components/VideoSection';
 import MemoriesCollage from './components/MemoriesCollage';
 import ClassmateQuotes from './components/ClassmateQuotes';
 import ThankYouLetter from './components/ThankYouLetter';
@@ -65,13 +66,16 @@ export default function App() {
           onLikeMemory={handleLikeMemory}
         />
 
-        {/* 3. Two lines said by classmates */}
+        {/* 3. Video Section: Celebration moments video */}
+        <VideoSection />
+
+        {/* 4. Two lines said by classmates */}
         <ClassmateQuotes 
           quotes={quotes}
           onLikeQuote={handleLikeQuote}
         />
 
-        {/* 4. Thank you note from the whole class */}
+        {/* 5. Thank you note from the whole class */}
         <ThankYouLetter 
           data={initialThankYouData}
         />
